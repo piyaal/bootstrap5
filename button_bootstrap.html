@@ -6,7 +6,7 @@
     <title>button</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<h1>
    <p class="h2"> create 9 buttons using bootstrap</p>
 
     <button type="button" class="btn btn-primary">button primary</button>
@@ -104,6 +104,176 @@
 <button type="button" class="btn-close btn-close-white" disabled aria-label="Close"></button>
   <br>
 
+
+   <br>
+   <br>
+   <h1>dropdown button</h1>
+
+   <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+
+<h1>pop over</h1>
+<div class="d-grid gap-1 col-2 mx-auto">
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+</div>
+<button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+    Popover on top
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+    Popover on right
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+    Popover on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+    Popover on left
+  </button>
+
+  <h1>tool tips</h1>
+  <br>
+  <br>
+  <br>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+    Tooltip on top
+  </button> <br>
+
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+    Tooltip on right
+  </button> <br>
+
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+    Tooltip on bottom
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+    Tooltip on left
+  </button>
+  <br>
+  <br>
+
+ <h1>Example single danger button </h1>
+<div class="btn-group">
+    <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Action
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+<div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Action
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+<div class="btn-group">
+    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Action
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+
+  <br>
+     <h1>
+        scroll spy
+     </h1>
+     <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, assumenda!</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsum.</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, mollitia.</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa qui cumque quae est obcaecati labore excepturi, sequi aspernatur quisquam aliquam!</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusantium ipsa maxime cupiditate laboriosam molestiae deleniti rerum odit nulla earum.</p>
+      </div>
+
+  <br>
+
+   <h1>
+    nested nav
+   </h1>
+
+   <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link" href="#item-1">Item 1</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+      </nav>
+      <a class="nav-link" href="#item-2">Item 2</a>
+      <a class="nav-link" href="#item-3">Item 3</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+      </nav>
+    </nav>
+  </nav>
+  
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+    <h4 id="item-1">Item 1</h4>
+    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+    <h5 id="item-1-1">Item 1-1</h5>
+    <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+    <h5 id="item-1-2">Item 1-2</h5>
+    <p>ccccccccccccccccccccccccccccccccccccccccccccc</p>
+    <h4 id="item-2">Item 2</h4>
+    <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
+    <h4 id="item-3">Item 3</h4>
+    <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+    <h5 id="item-3-1">Item 3-1</h5>
+    <p>ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+    <h5 id="item-3-2">Item 3-2</h5>
+    <p>gggggggggggggggggggggggggggggggggggggggggggggggggggg</p>
+  </div>
+  <br>
     <script src="js/bootstrap.bundle.min.js"></script>  
 </body>
 </html>
